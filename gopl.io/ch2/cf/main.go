@@ -9,9 +9,10 @@ package main
 
 import (
 	"fmt"
-	"gopl.io/ch2/tempconv"
 	"os"
 	"strconv"
+
+	"gopl.io/ch2/tempconv"
 )
 
 func main() {
@@ -23,8 +24,9 @@ func main() {
 		}
 		f := tempconv.Fahrenheit(t)
 		c := tempconv.Celsius(t)
-		fmt.Printf("%s = %s, %s = %s\n",
-			f, tempconv.FToC(f), c, tempconv.CToF(c))
+
+		fmt.Printf("%s = %s, %s = %s, %s = %s\n",
+			f, tempconv.FToC(f), c, tempconv.CToF(c), c, tempconv.CToK(c))
 	}
 }
 
